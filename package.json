@@ -1,0 +1,12 @@
+{
+  "name": "m3u_parser",
+  "version": "1.0.0",
+  "description": "Parses simple M3U playlist files and returns a list of objects with all the items tags.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Victor Maina",
+  "license": "ISC"
+}
