@@ -1,7 +1,7 @@
 {
-  "name": "m3u_parser",
-  "version": "1.0.0",
-  "description": "Parses simple M3U playlist files and returns a list of objects with all the items tags.",
+  "name": "simple-m3u-parser",
+  "version": "1.0.1",
+  "description": "Parses simple M3U/M3U8 playlist files and returns JavaScript objects.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
