@@ -15,10 +15,10 @@ npm install simple-m3u-parser
 ### Parsing M3U Playlist
 
 ```javascript
-const { MediaPlaylist } = require("m3u-parser");
+import { MediaPlaylist } from "simple-m3u-parser";
+import fs from "fs";
 
 // Example: Read M3U file as Uint8Array
-const fs = require("fs");
 const fileData = fs.readFileSync("example.m3u");
 const playlist = new MediaPlaylist(fileData);
 
@@ -29,7 +29,7 @@ console.log(playlist.playlist_items);
 ### Parsing Individual Playlist Item
 
 ```javascript
-const { MediaPlaylistItem } = require("m3u-parser");
+import { MediaPlaylistItem } from "simple-m3u-parser";
 
 // Example: Create a MediaPlaylistItem
 const itemInfo = "#EXTINF:180,Song 1\nhttp://example.com/song1.mp3";

@@ -1,9 +1,7 @@
-const { readFile } = require("fs");
-const { isUint8Array } = require("util/types");
 /**
  * Parses a individual item in an M3U playlist.
  */
-class MediaPlaylistItem {
+export class MediaPlaylistItem {
   /**
    * Original string from #EXTINF tag
    * @property {string} info
@@ -144,7 +142,7 @@ class MediaPlaylistItem {
 /**
  * Parses M3U/M3U8 files into a JS readable object
  */
-class MediaPlaylist {
+export class MediaPlaylist {
   static M3U_SIGNATURE = new Uint8Array([
     0x23, 0x45, 0x58, 0x54, 0x4d, 0x33, 0x55,
   ]);
@@ -191,7 +189,7 @@ class MediaPlaylist {
    * @param {Uint8Array} bytes_array
    */
   static is_bytes_array(bytes_array) {
-    if (!isUint8Array(bytes_array)) {
+    if (!ArrayBuffer.isView(bytes_array)) {
       throw new Error("Not a valid bytes array. Must be of type Uint8Array.");
     }
   }
