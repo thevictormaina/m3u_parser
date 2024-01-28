@@ -1,6 +1,6 @@
 {
   "name": "simple-m3u-parser",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Parses simple M3U/M3U8 playlist files and returns JavaScript objects.",
   "main": "index.js",
   "type": "module",
